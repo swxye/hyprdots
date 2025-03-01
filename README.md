@@ -1,7 +1,8 @@
 # Installation
+Follow these steps.
 ## Pre-Installation
-```
 You need to install:
+```
 Hyprland
 Hyprpaper
 Hyprshot
