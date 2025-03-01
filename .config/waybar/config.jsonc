@@ -1,0 +1,130 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "height": 10,
+    "modules-left": ["hyprland/workspaces","hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["idle_inhibitor","power-profiles-daemon","wireplumber","backlight","bluetooth","network","battery"],
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": []
+        },
+        "sort-by-number": true
+    },
+    
+    "hyprland/window": {
+        "format": "{title}"
+    },
+
+    "clock": {
+        "interval": 1,
+        "format": "{:%H:%M:%S}",
+        "format-alt": "{:%a, %b %d, %Y}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰈈",
+            "deactivated": "󰛑"
+        }
+    },
+
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
+
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": ["", "", ""],
+        "states": {
+            "quiet": 0,
+            "loud": 66
+        },
+        "on-click": "hyprctl dispatch exec [stdfloat] helvum",
+        "scroll-step": 5,
+        "max-volume": 130
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰌶", "󰛨", "", ""],
+        "states": {
+            "dim": 0,
+            "bright": 51
+        },
+        "scroll-step": 5
+    },
+
+    "bluetooth": {
+	    "format": " {status}",
+	    "format-disabled": "",
+	    "format-connected": " {num_connections} connected",
+        "on-click": "kitty --class stdfloat bluetuith",
+	    "tooltip-format": "{controller_alias}\t{controller_address}",
+	    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+	    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
+
+    "network": {
+        "interval": 1,
+        "format": "{ifname}",
+        "format-wifi": " {essid} {signalStrength}%",
+        "format-ethernet": " {ipaddr}/{cidr}",
+        "format-disconnected": "! Disconnected",
+        "on-click": "kitty --class stdfloat nmtui",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "tooltip-format-wifi": " {essid} {signalStrength}%",
+        "tooltip-format-ethernet": " {ifname}",
+        "tooltip-format-disconnected": "Disconnected"
+    },
+
+    "battery": {
+        "interval": 1,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "{icon} {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    }
+}
