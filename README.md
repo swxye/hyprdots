@@ -24,4 +24,4 @@ cp -rf ~/hyprdots/Wallpapers ~ &&
 rm -rf ~/hyprdots
 ```
 ## Post Installation
-Whatever you want :3
+Reboot and Whatever you want :3
