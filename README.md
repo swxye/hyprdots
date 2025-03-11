@@ -10,6 +10,7 @@ You need to install:
 - Waybar
 - Rofi (Wayland preffered)
 - Power Profiles Daemon
+- Light
 - Kitty
 - Btop
 
