@@ -9,4 +9,3 @@ WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" 
 # Apply the selected wallpaper
 hyprctl hyprpaper reload ,"$WALLPAPER"
 echo -e "preload = $WALLPAPER\nwallpaper = , $WALLPAPER" > "$HOME/.config/hypr/hyprpaper.conf"
-wal --cols16 -i "$WALLPAPER"
