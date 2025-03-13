@@ -11,6 +11,8 @@ Programs:
 - Waybar
 - Rofi (Wayland preffered)
 - Power Profiles Daemon
+- Helvum
+- Bluetuith
 - Light
 - Kitty
 - Btop
