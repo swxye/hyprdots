@@ -2,6 +2,7 @@
 How to install these dotfiles
 ## Pre-Installation
 You need to install:
+Programs:
 - Hyprland
 - Hyprpaper
 - Hyprshot
@@ -13,6 +14,9 @@ You need to install:
 - Light
 - Kitty
 - Btop
+Fonts:
+- JetBrains Mono
+- Symbols Nerd Font
 
 ## Installation or Updating
 Execute these commands:
