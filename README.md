@@ -7,6 +7,7 @@ Programs:
 - Hyprpaper
 - Hyprshot
 - Hyprpicker
+- Qt6ct
 - XDG Desktop Portal (GTK,Hyprland)
 - Waybar
 - Rofi (Wayland preffered)
