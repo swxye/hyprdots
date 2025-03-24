@@ -47,26 +47,6 @@ Fonts:
 - JetBrains Mono
 - Symbols Nerd Font
 
-Execute these:
-```
-sudo systemctl enable getty@tty1
-sudo systemctl edit getty@tty1
-```
-
-Add this to the config:
-```
-[Service]
-ExecStart=
-ExecStart=-/usr/bin/agetty --skip-login --nonewline --noissue --autologin <user> --noclear %I $TERM
-```
-
-Add this to /etc/bash/bash.bashrc:
-```
-if [[ "$(tty)" == "/dev/tty1" ]]; then
-    exec Hyprland &>/dev/null
-fi
-```
-
 ## Installation or Updating
 
 Execute these commands:
