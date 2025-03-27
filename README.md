@@ -31,6 +31,7 @@ You need to install:
 Programs:
 - Hypr (Land,Paper,Lock,Idle,Picker,Shot)
 - Qt6ct
+- Adwaita GTK Theme
 - XDG Desktop Portal (GTK,Hyprland)
 - Waybar
 - Rofi (Wayland preffered)
