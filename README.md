@@ -31,7 +31,8 @@ You need to install:
 Programs:
 - Hypr (Land,Paper,Lock,Idle,Picker,Shot)
 - Qt6ct
-- Adwaita GTK Theme
+- LibAdwaita
+- Adwaita GTK3 Theme
 - XDG Desktop Portal (GTK,Hyprland)
 - Waybar
 - Rofi (Wayland preffered)
@@ -58,8 +59,9 @@ rm -rf ~/.config/{hypr,rofi,waybar} &&
 cp -rf ~/hyprdots/config/* ~/.config
 
 rm -rf ~/Wallpapers &&
-cp -rf ~/hyprdots/Wallpapers ~ &&
+cp -rf ~/hyprdots/Wallpapers ~
+
 rm -rf ~/hyprdots
 ```
 ## Post Installation
-Reboot and Whatever you want :3
+Reboot
