@@ -39,7 +39,7 @@ Programs:
 - Power Profiles Daemon
 - Helvum
 - Bluez (Utils)
-- Bluetuith
+- Blueman
 - Pipewire (Pulse,Alsa)
 - Wireplumber
 - Light
