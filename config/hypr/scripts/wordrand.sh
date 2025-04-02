@@ -17,19 +17,19 @@ if (( $random_number == 3 )); then
 fi
 
 if (( $random_number == 4 )); then
-    echo -e "YOURE NOT SIGMA, $(echo "$USER" | tr 'a-z' 'A-Z')."
+    echo -e "meep"
 fi
 
 if (( $random_number == 5 )); then
-    echo -e "Lemme sleep more, $USER."
+    echo -e "FIRE IN THE HOLE!!"
 fi
 
 if (( $random_number == 6 )); then
-    echo -e "Fuck off, $USER."
+    echo -e "|    ||\n||   |_"
 fi
 
 if (( $random_number == 7 )); then
-    echo -e "OH, MY $(echo "$USER" | tr 'a-z' 'A-Z')"
+    echo -e "Seven."
 fi
 
 if (( $random_number == 8 )); then
