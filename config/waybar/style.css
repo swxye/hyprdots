@@ -40,6 +40,24 @@ window#waybar.empty #window {
     border-bottom: 2px solid rgba(255, 255, 255, 0);
 }
 
+/* SWAY NOTIFICATION CENTER */
+
+#custom-notification {
+    color: rgb(255, 150, 150);
+    font-weight: bolder;
+    border-bottom: 2px solid rgb(255, 150, 150);
+    border-radius: 0px;
+    padding: 0px 5px;
+}
+
+#custom-notification.none, #custom-notification.inhibited-none, #custom-notification.dnd-none, #custom-notification.dnd-inhibited-none {
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    padding: 0px 5px;
+}
+
 /* CLOCK */
 
 #clock {
