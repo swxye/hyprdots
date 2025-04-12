@@ -35,6 +35,7 @@ Programs:
 - Adwaita GTK3 Theme
 - XDG Desktop Portal (GTK,Hyprland)
 - Waybar
+- Sway Notification Center
 - Rofi (Wayland preffered)
 - Power Profiles Daemon
 - Helvum
@@ -55,7 +56,7 @@ Execute these commands:
 ```
 git clone https://github.com/Delta-Novalis/hyprdots.git
 
-rm -rf ~/.config/{hypr,rofi,waybar} &&
+rm -rf ~/.config/{hypr,rofi,waybar,swaync} &&
 cp -rf ~/hyprdots/config/* ~/.config
 
 rm -rf ~/Wallpapers &&
