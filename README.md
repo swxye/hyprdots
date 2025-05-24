@@ -54,7 +54,7 @@ Fonts:
 
 Execute these commands:
 ```
-git clone https://github.com/Swye-0/hyprdots.git
+git clone https://github.com/swxye/hyprdots.git
 
 rm -rf ~/.config/{hypr,rofi,waybar,swaync} &&
 cp -rf ~/hyprdots/config/* ~/.config
