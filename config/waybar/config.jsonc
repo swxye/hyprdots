@@ -49,7 +49,7 @@
     "clock": {
         "interval": 1,
         "format": "{:%H:%M:%S}",
-        "format-alt": "{:%a, %b %d, %Y}",
+        "format-alt": "{:%a, %Y %b %d}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
                     "mode"          : "year",
