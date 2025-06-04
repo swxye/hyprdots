@@ -1,204 +1,228 @@
+@define-color rosewater #f5e0dc;
+@define-color flamingo  #f2cdcd;
+@define-color pink      #f5c2e7;
+@define-color mauve     #cba6f7;
+@define-color red       #f38ba8;
+@define-color maroon    #eba0ac;
+@define-color peach     #fab387;
+@define-color yellow    #f9e2af;
+@define-color green     #a6e3a1;
+@define-color teal      #94e2d5;
+@define-color sky       #89dceb;
+@define-color sapphire  #74c7ec;
+@define-color blue      #89b4fa;
+@define-color lavender  #b4befe;
+
+@define-color text      #cdd6f4;
+@define-color subtext1  #bac2de;
+@define-color subtext0  #a6adc8;
+@define-color overlay2  #9399b2;
+@define-color overlay1  #7f849c;
+@define-color overlay0  #6c7086;
+@define-color surface2  #585b70;
+@define-color surface1  #45475a;
+@define-color surface0  #313244;
+
+@define-color base      #1e1e2e;
+@define-color mantle    #181825;
+@define-color crust     #11111b;
+
 * {
     font-family: 'JetBrains Mono', 'Nerd Fonts Symbols';
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: @crust;
+    padding: 20px;
 }
 
 /* WORKSPACES */
 
 #workspaces {
+    background-color: @base;
+    border-radius: 15px;
     margin-right: 10px;
+    margin: 5px 10px;
 }
 
 #workspaces button {
-    color: rgb(255, 255, 255);
+    color: @text;
+    background-color: @base;
     font-weight: bolder;
-    border-bottom: 2px solid rgba(255, 255, 255, 0);
-    border-radius: 0px;
-    padding: 0px 5px;
+    border-radius: 15px;
+    animation: none;
+    transition: none;
+    padding: 0px 10px;
 }
 
 #workspaces button.active {
-    border-bottom: 2px solid rgb(255, 255, 255);
-    border-radius: 0px;
-    padding: 0px 5px;
+    color: @base;
+    background-color: @text;
 }
 
 /* WINDOWS */
 
 #window {
-    color: rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(255, 255, 255);
-    border-radius: 0px;
-    padding: 0px 5px;
-    margin: 0px 10px;
+    color: @text;
+    background-color: @base;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 5px 10px;
 }
 
 window#waybar.empty #window {
-    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    background-color: @base;
 }
 
 /* SWAY NOTIFICATION CENTER */
 
 #custom-notification {
-    color: rgb(255, 150, 150);
+    color: @base;
+    background-color: @red;
     font-weight: bolder;
-    border-bottom: 2px solid rgb(255, 150, 150);
-    border-radius: 0px;
-    padding: 0px 5px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 5px 10px;
 }
 
 #custom-notification.none, #custom-notification.inhibited-none, #custom-notification.dnd-none, #custom-notification.dnd-inhibited-none {
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-    border-bottom: 2px solid rgba(255, 255, 255, 0);
-    border-radius: 0px;
-    padding: 0px 5px;
+    color: @text;
+    background: @base;
 }
 
 /* CLOCK */
 
 #clock {
-    color: rgb(255, 255, 255);
+    color: @text;
+    background-color: @base;
     font-weight: bolder;
-    border-bottom: 2px solid rgba(255, 255, 255, 0);
-    border-radius: 0px;
-    padding: 0px 5px;
-    margin: 0px 10px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 5px 10px;
 }
 
 /* IDLE INHIBITOR */
 
 #idle_inhibitor {
-    color: rgb(255, 255, 255);
-    border-bottom: 2px solid rgba(255, 255, 255, 0);
-    border-radius: 0px;
-    padding: 0px 5px;
-    margin: 0px 10px;
+    color: @text;
+    background-color: @base;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 5px 10px;
 }
 
 #idle_inhibitor.activated {
-    border-bottom: 2px solid rgb(255, 255, 255);
+    color: @base;
+    background-color: @text;
 }
 
 /* POWER PROFILES DAEMON */
 
 #power-profiles-daemon {
-    border-radius: 0px;
-    padding: 0px 5px;
-    margin: 0px 10px;
+    background-color: @base;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 5px 10px;
 }
 
 #power-profiles-daemon.power-saver {
-    color: rgb(150, 255, 150);
-    border-bottom: 2px solid rgba(150, 255, 150, 0);
+    color: @green;
 }
 
 #power-profiles-daemon.balanced {
-    color: rgb(255, 255, 150);
-    border-bottom: 2px solid rgba(255, 255, 150, 0);
+    color: @yellow;
 }
 
 #power-profiles-daemon.performance {
-    color: rgb(255, 150, 150);
-    border-bottom: 2px solid rgb(255, 150, 150);
+    color: @base;
+    background-color: @red;
 }
 
 /* WIREPLUMBER */
 
 #wireplumber {
-    border-radius: 0px;
-    padding: 0px 5px;
-    margin: 0px 10px;
+    background-color: @base;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 5px 10px;
 }
 
 #wireplumber.quiet {
-    color: rgb(150, 255, 150);
-    border-bottom: 2px solid rgba(150, 255, 150, 0);
+    color: @green;
 }
 
 #wireplumber.loud {
-    color: rgb(150, 255, 150);
-    border-bottom: 2px solid rgb(150, 255, 150);
+    color: @base;
+    background-color: @green;
 }
 
 /* BACKLIGHT */
 
 #backlight {
-    border-radius: 0px;
-    padding: 0px 5px;
-    margin: 0px 10px;
+    background-color: @base;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 5px 10px;
 }
 
 #backlight.dim {
-    color: rgb(255, 255, 150);
-    border-bottom: 2px solid rgba(255, 255, 150, 0);
+    color: @yellow;
 }
 
 #backlight.bright {
-    color: rgb(255, 255, 150);
-    border-bottom: 2px solid rgb(255, 255, 150);
+    color: @base;
+    background-color: @yellow;
 }
 
 /* BLUETOOTH */
 
 #bluetooth {
-    color: rgb(150, 150, 255);
-    border-bottom: 2px solid rgb(150, 150, 255);
-    border-radius: 0px;
-    padding: 0px 5px;
-    margin: 0px 10px;
+    color: @base;
+    background-color: @blue;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 5px 10px;
 }
 
-#bluetooth.off {
-    color: rgb(150, 150, 255);
-    border-bottom: 2px solid rgba(150, 150, 255, 0);
-    border-radius: 0px;
-    padding: 0px 5px;
-    margin: 0px 10px;
+#bluetooth.off, #bluetooth.disabled {
+    color: @blue;
+    background-color: @base;
 }
 
 /* NETWORK */
 
 #network {
-    color: rgb(150, 255, 255);
-    border-bottom: 2px solid rgb(150, 255, 255);
-    border-radius: 0px;
-    padding: 0px 5px;
-    margin: 0px 10px;
+    color: @base;
+    background-color: @sapphire;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 5px 10px;
 }
 
 #network.disconnected {
-    color: rgb(150, 255, 255);
-    border-bottom: 2px solid rgba(150, 255, 255, 0);
-    border-radius: 0px;
-    padding: 0px 5px;
-    margin: 0px 10px;
+    color: @sapphire;
+    background-color: @base;
 }
 
 /* BATTERY */
 
 #battery {
-    color: rgb(150, 255, 150);
-    border-bottom: 2px solid rgba(150, 255, 150, 0);
-    border-radius: 0px;
-    padding: 0px 5px;
-    margin-left: 10px;
+    color: @green;
+    background-color: @base;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 5px 10px;
 }
 
 #battery.warning {
-    color: rgb(255, 200, 150);
-    border-bottom: 2px solid rgba(255, 200, 150, 0);
+    color: @peach;
 }
 
 #battery.critical {
-    color: rgb(255, 150, 150);
-    border-bottom: 2px solid rgba(255, 150, 150, 0);
+    color: @red;
 }
 
 #battery.charging, #battery.plugged {
-    color: rgb(150, 255, 255);
-    border-bottom: 2px solid rgb(150, 255, 255);
+    color: @base;
+    background-color: @mauve;
 }

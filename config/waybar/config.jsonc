@@ -116,7 +116,7 @@
 
     "bluetooth": {
 	    "format": " {status}",
-	    "format-disabled": "",
+	    "format-disabled": " {status}",
 	    "format-connected": " {num_connections} connected",
         "on-click": "hyprctl dispatch exec [float] blueman-manager",
 	    "tooltip-format": "{controller_alias}\t{controller_address}",
