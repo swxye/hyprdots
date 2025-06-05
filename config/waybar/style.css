@@ -32,14 +32,14 @@
 }
 
 window#waybar {
-    background-color: @crust;
+    background-color: @base;
     padding: 20px;
 }
 
 /* WORKSPACES */
 
 #workspaces {
-    background-color: @base;
+    background-color: @mantle;
     border-radius: 15px;
     margin-right: 10px;
     margin: 5px 10px;
@@ -47,7 +47,7 @@ window#waybar {
 
 #workspaces button {
     color: @text;
-    background-color: @base;
+    background-color: @mantle;
     font-weight: bolder;
     border-radius: 15px;
     animation: none;
@@ -56,7 +56,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: @base;
+    color: @mantle;
     background-color: @text;
 }
 
@@ -64,20 +64,20 @@ window#waybar {
 
 #window {
     color: @text;
-    background-color: @base;
+    background-color: @mantle;
     border-radius: 15px;
     padding: 0px 10px;
     margin: 5px 10px;
 }
 
 window#waybar.empty #window {
-    background-color: @base;
+    background-color: @mantle;
 }
 
 /* SWAY NOTIFICATION CENTER */
 
 #custom-notification {
-    color: @base;
+    color: @mantle;
     background-color: @red;
     font-weight: bolder;
     border-radius: 15px;
@@ -87,14 +87,14 @@ window#waybar.empty #window {
 
 #custom-notification.none, #custom-notification.inhibited-none, #custom-notification.dnd-none, #custom-notification.dnd-inhibited-none {
     color: @text;
-    background: @base;
+    background: @mantle;
 }
 
 /* CLOCK */
 
 #clock {
     color: @text;
-    background-color: @base;
+    background-color: @mantle;
     font-weight: bolder;
     border-radius: 15px;
     padding: 0px 10px;
@@ -105,21 +105,21 @@ window#waybar.empty #window {
 
 #idle_inhibitor {
     color: @text;
-    background-color: @base;
+    background-color: @mantle;
     border-radius: 15px;
     padding: 0px 10px;
     margin: 5px 10px;
 }
 
 #idle_inhibitor.activated {
-    color: @base;
+    color: @mantle;
     background-color: @text;
 }
 
 /* POWER PROFILES DAEMON */
 
 #power-profiles-daemon {
-    background-color: @base;
+    background-color: @mantle;
     border-radius: 15px;
     padding: 0px 10px;
     margin: 5px 10px;
@@ -134,14 +134,14 @@ window#waybar.empty #window {
 }
 
 #power-profiles-daemon.performance {
-    color: @base;
+    color: @mantle;
     background-color: @red;
 }
 
 /* WIREPLUMBER */
 
 #wireplumber {
-    background-color: @base;
+    background-color: @mantle;
     border-radius: 15px;
     padding: 0px 10px;
     margin: 5px 10px;
@@ -152,14 +152,14 @@ window#waybar.empty #window {
 }
 
 #wireplumber.loud {
-    color: @base;
+    color: @mantle;
     background-color: @green;
 }
 
 /* BACKLIGHT */
 
 #backlight {
-    background-color: @base;
+    background-color: @mantle;
     border-radius: 15px;
     padding: 0px 10px;
     margin: 5px 10px;
@@ -170,14 +170,14 @@ window#waybar.empty #window {
 }
 
 #backlight.bright {
-    color: @base;
+    color: @mantle;
     background-color: @yellow;
 }
 
 /* BLUETOOTH */
 
 #bluetooth {
-    color: @base;
+    color: @mantle;
     background-color: @blue;
     border-radius: 15px;
     padding: 0px 10px;
@@ -186,13 +186,13 @@ window#waybar.empty #window {
 
 #bluetooth.off, #bluetooth.disabled {
     color: @blue;
-    background-color: @base;
+    background-color: @mantle;
 }
 
 /* NETWORK */
 
 #network {
-    color: @base;
+    color: @mantle;
     background-color: @sapphire;
     border-radius: 15px;
     padding: 0px 10px;
@@ -201,14 +201,14 @@ window#waybar.empty #window {
 
 #network.disconnected {
     color: @sapphire;
-    background-color: @base;
+    background-color: @mantle;
 }
 
 /* BATTERY */
 
 #battery {
     color: @green;
-    background-color: @base;
+    background-color: @mantle;
     border-radius: 15px;
     padding: 0px 10px;
     margin: 5px 10px;
@@ -223,6 +223,6 @@ window#waybar.empty #window {
 }
 
 #battery.charging, #battery.plugged {
-    color: @base;
+    color: @mantle;
     background-color: @mauve;
 }
