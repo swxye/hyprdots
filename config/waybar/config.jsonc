@@ -100,7 +100,7 @@
         },
         "on-click": "hyprctl dispatch exec [float] helvum",
         "scroll-step": 5,
-        "max-volume": 130
+        "max-volume": 125
     },
 
     "backlight": {
