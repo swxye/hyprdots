@@ -30,7 +30,7 @@ Instructions how to setup these files.
 <br>
 
 ## Pre-Installation
-You need to install:
+You need to install (Note: on Arch, you will need to use the AUR often.):
 Programs:
 - Hypr (Land,Paper,Lock,Idle,Picker,Shot)
 - Qt6ct
