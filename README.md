@@ -59,7 +59,7 @@ Execute these commands:
 ```
 git clone https://github.com/swxye/hyprdots.git
 
-rm -rf ~/.config/{hypr,rofi,waybar,swaync} &&
+rm -rf ~/.config/{hypr,wofi,waybar,swaync} &&
 cp -rf ~/hyprdots/config/* ~/.config
 
 rm -rf ~/Wallpapers &&
