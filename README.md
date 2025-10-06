@@ -1,3 +1,8 @@
+# IMPORTANT NOTE!
+These dotfiles are now deprecated due to me switching to a different compositor; my new dotfiles on that compositor, will be in a different repository
+
+
+
 # Keybinds
 Basic keybinds that have been changed from their original state.
 <br>
